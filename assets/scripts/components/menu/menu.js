@@ -24,27 +24,34 @@ class MenuPadrao extends HTMLElement {
 		divLogo.append(logo, textLogo)
 
 		const link1 = document.createElement('a');
+		link1.setAttribute('href', "#");
 		link1.innerText = "Quem somos";
 
 		const link2 = document.createElement('a');
+		link2.setAttribute('href', "#");
 		link2.innerText = "Clientes";
 
 		const link3 = document.createElement('a');
+		link3.setAttribute('href', "#");
 		link3.innerText = "Serviços";
 
 		const link4 = document.createElement('a');
+		link4.setAttribute('href', "#");
 		link4.innerText = "Contato";
 
-		header.append(divLogo, link1,link2,link3,link4);
+		nav.append(link1,link2,link3,link4)
+
+		header.append(divLogo, nav);
 
 		return header;
 	}
 
 	styles(){
-		const menuStyle = document.createElement('style');
-		menuStyle.innerHTML = `<link rel="stylesheet" type="text/css" href="./assets/scripts/components/menu/style.css" />`;
-
-		console.log('oi', menuStyle)
+		const menuStyle = document.createElement('link');
+		menuStyle.setAttribute('rel', 'stylesheet');
+		menuStyle.setAttribute('type', 'text/css');
+		menuStyle.setAttribute('href', './assets/scripts/components/menu/style.css');
+		
 		return menuStyle;
 	}
 }
