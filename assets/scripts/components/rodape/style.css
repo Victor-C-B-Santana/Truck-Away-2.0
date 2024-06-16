@@ -1,1 +1,47 @@
-ECHO est  ativado.
+footer{
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: 
+	" .     h2      . "
+	" redes douglas paulo";
+	justify-content: space-between;
+	align-items: center;
+
+
+}
+
+footer h2{
+	grid-area: h2;
+}
+
+footer div{
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+footer div:nth-child()
+
+footer div:first-child{
+	grid-area: redes ;
+}
+
+footer div:last-child{
+	grid-area: paulo;
+}
+
+.logo{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 2px;
+}
+
+.logo img{
+  height: 50px;
+  border: none;
+}
