@@ -3,9 +3,10 @@ main{
     padding: 10px;
 
     width: 50%;
-    background-color: darkgray;
+    background-color: rgb(219, 219, 219);
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
+    flex: 1;
     align-items: start;
     justify-content: center;
 
@@ -17,6 +18,12 @@ main{
         align-items: center;
         column-gap: 5px;
     }
+
+    h3{
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
     img{
         height: 50px;
         width: 50px;
@@ -24,4 +31,9 @@ main{
 
     margin: auto;
     border-radius: 10px;
+}
+
+div:last-child{
+    padding-left: 10px;
+    border-left: 1px black solid;
 }
