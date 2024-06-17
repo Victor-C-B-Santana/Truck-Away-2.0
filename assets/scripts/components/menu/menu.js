@@ -24,20 +24,20 @@ class MenuPadrao extends HTMLElement {
 		divLogo.append(logo, textLogo)
 
 		const link1 = document.createElement('a');
-		link1.setAttribute('href', "#");
+		link1.setAttribute('href', "index.html");
 		link1.innerText = "Quem somos";
 
 		const link2 = document.createElement('a');
-		link2.setAttribute('href', "#");
-		link2.innerText = "Clientes";
+		link2.setAttribute('href', "clientes.html");
+		link2.innerText = "Parcerias";
 
 		const link3 = document.createElement('a');
-		link3.setAttribute('href', "#");
+		link3.setAttribute('href', "servicos.html");
 		link3.innerText = "Serviços";
 
 		const link4 = document.createElement('a');
-		link4.setAttribute('href', "#");
-		link4.innerText = "Contato";
+		link4.setAttribute('href', "contato.html");
+		link4.innerText = "Fale conosco";
 
 		nav.append(link1,link2,link3,link4)
 

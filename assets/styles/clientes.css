@@ -1,0 +1,13 @@
+.parcerias{
+    max-width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 0 10px;
+
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+}

@@ -1,19 +1,17 @@
 footer{
+	background-color: whitesmoke;
+
 	display: grid;
-	width: 100%;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr ;
+	grid-template-rows: 25% 75%;
 	grid-template-areas: 
-	" .     h2      . "
-	" redes douglas paulo";
-	justify-content: space-between;
-	align-items: center;
-
-
+	"h2"
+	"colunas";
 }
 
 footer h2{
 	grid-area: h2;
+	text-align: center;
 }
 
 footer div{
@@ -23,14 +21,21 @@ footer div{
 	gap: 10px;
 }
 
-footer div:nth-child()
-
-footer div:first-child{
-	grid-area: redes ;
+.colunas{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: start;
+	justify-content: center;
+	padding: 5px 10px 10px 20px;
+	gap: 10px;
 }
 
-footer div:last-child{
-	grid-area: paulo;
+.colunas div{
+	flex: 1;
+	
+	span{
+		max-width: 20em;
+	}
 }
 
 .logo{
@@ -42,6 +47,6 @@ footer div:last-child{
 }
 
 .logo img{
-  height: 50px;
+  height: 30px;
   border: none;
 }

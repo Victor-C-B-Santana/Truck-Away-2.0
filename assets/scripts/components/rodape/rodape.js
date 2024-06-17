@@ -11,12 +11,10 @@ class Rodape extends HTMLElement{
 		const footer = document.createElement('footer');
 
 		const titulo = document.createElement('h2');
-		titulo.innerText = "Contato";
+		titulo.innerText = "Consultoria";
 
 		const coluna1 = document.createElement('div');
-
 		const coluna2 = document.createElement('div');
-
 		const coluna3 = document.createElement('div');
 
 		coluna1.innerHTML = `
@@ -24,7 +22,6 @@ class Rodape extends HTMLElement{
 
 			<span class="logo">Caso queira falar sobre contratos, utilize os contatos "Paulo"</span>
 			<span class="logo">Caso queria sobre RH ou conteúdo relacionado, utilze os contatos "Douglas"</span>
-			<span class="logo"><img src="assets/images/logos/linkedin.png"/> Douglas</span>
 		`;
 
 		coluna2.innerHTML = `
@@ -38,12 +35,16 @@ class Rodape extends HTMLElement{
 		coluna3.innerHTML = `
 			<h3>Paulo</h3>
 
-			<span class="logo"><img src="assets/images/logos/e-mail.png"/> douglas.theRock@gmail.com</span>
+			<span class="logo"><img src="assets/images/logos/e-mail.png"/> paulo.paulo@gmail.com</span>
 			<span class="logo"><img src="assets/images/logos/telephone_724664.png"/> 11 92343 1923</span>
-			<span class="logo"><img src="assets/images/logos/linkedin.png"/> paulo.vascaino1234@gmail.com</span>
+			<span class="logo"><img src="assets/images/logos/linkedin.png"/> paulo.1234@gmail.com</span>
 		`;
 
-		footer.append(titulo,coluna1,coluna2,coluna3)
+		const colunas = document.createElement('div');
+		colunas.classList.add("colunas")
+		colunas.append(coluna1,coluna2,coluna3);
+
+		footer.append(titulo,colunas)
 
 		return footer;
 	}

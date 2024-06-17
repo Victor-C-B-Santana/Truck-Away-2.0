@@ -47,3 +47,7 @@ nav{
     font-size: 1.5em;
     padding-right: 10px;
 }
+
+nav a:hover{
+    color: #ff6656;
+}

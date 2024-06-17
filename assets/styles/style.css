@@ -14,4 +14,41 @@
 
 body{
 	font-family: "Roboto Condensed", sans-serif;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 10% 80% 10%;
+	grid-template-areas: 
+	"menu" 
+	"main"
+	"rodape";
+}
+
+menu-padrao{
+	grid-area: menu;
+}
+
+main{
+	grid-area: main;
+	display: flex;
+	flex-flow: column nowrap;
+
+	gap: 2em;
+	justify-content: center;
+	align-items: center;
+
+	h1{
+		font-family: "Dosis", sans-serif;
+	} 
+
+	p{
+		max-width: 30em;
+	}
+
+	img{
+		width: 50%;
+	}
+}
+
+rodape-padrao{
+	grid-area: rodape;
 }

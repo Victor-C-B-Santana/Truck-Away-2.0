@@ -1,0 +1,27 @@
+main{
+
+    padding: 10px;
+
+    width: 50%;
+    background-color: darkgray;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: start;
+    justify-content: center;
+
+    span{
+        display: flex;
+        flex-flow: row nowrap;
+
+        justify-content: start;
+        align-items: center;
+        column-gap: 5px;
+    }
+    img{
+        height: 50px;
+        width: 50px;
+    }
+
+    margin: auto;
+    border-radius: 10px;
+}
