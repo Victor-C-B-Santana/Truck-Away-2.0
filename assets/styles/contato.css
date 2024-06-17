@@ -17,6 +17,7 @@ main{
         justify-content: start;
         align-items: center;
         column-gap: 5px;
+        padding: 5px 0;
     }
 
     h3{
